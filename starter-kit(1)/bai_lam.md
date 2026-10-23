@@ -64,21 +64,20 @@ Get-Content logs/daily_report.txt
 
 ```text
 === BAO CAO LOI ===
-[2026-10-01 08:15:32] [ERROR] Database connection timeout on /api/products
-[2026-10-01 09:22:10] [ERROR] Failed to load configuration file for store branch 04
-
+2025-10-28 08:24:28 [ERROR] Thanh toan bi tu choi
+2025-10-28 08:30:28 [ERROR] Thanh toan bi tu choi
 ```
 
 ## 4.4. Thao tác với tài liệu Markdown (README.md)
 
 > README.md được chấm trực tiếp trên file `README.md` ở gốc dự án. Đánh dấu `[x]` vào các mục đã làm để tự kiểm tra.
 
-- [ ] Heading 1: tên dự án
-- [ ] Mô tả ngắn có cả **in đậm** và *in nghiêng*
-- [ ] Bảng `Thư mục | Nội dung`, ít nhất 3 dòng dữ liệu
-- [ ] Code block chứa lệnh PowerShell/Terminal liệt kê nội dung dự án
-- [ ] Task list ít nhất 2 công việc, có ít nhất 1 mục đã hoàn thành
-- [ ] Blockquote nhắc không upload `.env`
+- [X] Heading 1: tên dự án
+- [X] Mô tả ngắn có cả **in đậm** và *in nghiêng*
+- [X] Bảng `Thư mục | Nội dung`, ít nhất 3 dòng dữ liệu
+- [X] Code block chứa lệnh PowerShell/Terminal liệt kê nội dung dự án
+- [X] Task list ít nhất 2 công việc, có ít nhất 1 mục đã hoàn thành
+- [X] Blockquote nhắc không upload `.env`
 
 ## 4.5. Chạy script auto_report (.ps1 hoặc .sh)
 
@@ -99,10 +98,9 @@ Write-Host "Hoan thanh!
 
 ```text
 === BAO CAO LOI ===
-[2026-10-01 08:15:32] [ERROR] Database connection timeout on /api/products
-[2026-10-01 09:22:10] [ERROR] Failed to load configuration file for store branch 04
-[2026-10-02 11:05:44] [ERROR] Nullpointer exception in checkout controller
-
+2025-10-28 08:24:28 [ERROR] Thanh toan bi tu choi
+2025-10-28 08:30:28 [ERROR] Thanh toan bi tu choi
+2025-10-28 08:33:28 [ERROR] Ket noi kho du lieu that bai
 ```
 
 ## 4.6. Đếm số dòng lỗi
@@ -117,8 +115,7 @@ Write-Host "Hoan thanh!
 ### Kết quả đếm (Windows: giá trị Count; macOS: con số in ra)
 
 ```text
-
-giá trị count:3
+6
 ```
 
 ## 4.7. Báo cáo tổng hợp
@@ -136,13 +133,16 @@ Get-Content logs/tong_hop.txt
 
 ```text
 === TONG HOP LOG ===
-[2026-10-01 07:30:12] [WARNING] High memory usage detected: 85%
-[2026-10-02 10:12:05] [WARNING] Deprecated API endpoint called: /v1/old-search3
-
+2025-10-28 08:24:28 [ERROR] Thanh toan bi tu choi
+2025-10-28 08:30:28 [ERROR] Thanh toan bi tu choi
+2025-10-28 08:33:28 [ERROR] Ket noi kho du lieu that bai
+2025-10-28 08:39:28 [ERROR] Ket noi kho du lieu that bai
+2025-10-28 08:42:28 [ERROR] Ket noi kho du lieu that bai
+2025-10-28 09:12:28 [ERROR] Thanh toan bi tu choi
 ```
 
 ## 4.8. Excel
 ### Lệnh đã chạy 
-ten_san_pham: =VLOOKUP(C2, SanPham!$A$2:$C$100, 2, FALSE)
-gia_ban: =VLOOKUP(C2, SanPham!$A$2:$C$100, 3, FALSE)
-tien_ban: =D2*F2
+- ten_san_pham: =VLOOKUP(C2, SanPham!$A$2:$C$100, 2, FALSE)
+- gia_ban: =VLOOKUP(C2, SanPham!$A$2:$C$100, 3, FALSE)
+- tien_ban: =D2*F2
