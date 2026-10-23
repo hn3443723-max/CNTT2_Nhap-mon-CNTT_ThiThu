@@ -142,5 +142,7 @@ Get-Content logs/tong_hop.txt
 ```
 
 ## 4.8. Excel
-
-> Phần Excel được chấm trực tiếp trên file `data/don_ban_thang_10.xlsx`, không cần ghi vào đây.
+### Lệnh đã chạy 
+ten_san_pham: =VLOOKUP(C2, SanPham!$A$2:$C$100, 2, FALSE)
+gia_ban: =VLOOKUP(C2, SanPham!$A$2:$C$100, 3, FALSE)
+tien_ban: =D2*F2
